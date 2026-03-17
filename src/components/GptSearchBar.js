@@ -34,7 +34,7 @@ const GptSearchBar = () => {
       method: "POST",
       headers: {
         "Authorization": "Bearer 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",
-        "HTTP-Referer": "http://localhost:3000",
+        "HTTP-Referer": "https://netflixgpt-blue.vercel.app",
         "X-Title": "NetflixGPT",
         "Content-Type": "application/json"
       },
