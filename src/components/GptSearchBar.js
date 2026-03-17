@@ -46,7 +46,11 @@ const GptSearchBar = () => {
       })
     });
 
-    const data = await response.json();
+   const data = await response.json();
+   if (!response.ok) {
+   console.error("API Error:", data);
+   return;
+   } 
    const gptMovies = JSON.parse(
       data.choices[0].message.content
     );
